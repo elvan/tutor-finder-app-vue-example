@@ -1,4 +1,4 @@
-import dbUrl from '@/config/firebaseConfig';
+import { dbUrl } from '@/config/firebaseConfig';
 
 export default {
   async contactCoach(context, payload) {
