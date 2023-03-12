@@ -1,4 +1,7 @@
 <template>
+  <base-dialog :show="!!error" title="An error occurred!" @close="handleError">
+    <p>{{ error }}</p>
+  </base-dialog>
   <section>
     <coach-filter @change-filter="setFilters"></coach-filter>
   </section>
