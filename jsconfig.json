@@ -5,22 +5,13 @@
   ],
   "exclude": [],
   "compilerOptions": {
-    "target": "es5",
-    "module": "esnext",
-    "baseUrl": "./",
-    "moduleResolution": "node",
     "allowJs": true,
     "composite": true,
+    "baseUrl": "./",
     "paths": {
       "@/*": [
         "src/*"
       ]
-    },
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ]
+    }
   }
 }
