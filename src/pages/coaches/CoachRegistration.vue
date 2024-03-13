@@ -1,3 +1,1 @@
-<template>
-  <div></div>
-</template>
+<template>REGISTER</template>
