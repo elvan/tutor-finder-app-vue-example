@@ -9,8 +9,12 @@ export default {
       areas: data.areas,
     };
 
+    const token = context.rootGetters.token;
+
     const response = await fetch(
-      process.env.VUE_APP_FIREBASE_DATABASE + `/coaches/${userId}.json`,
+      process.env.VUE_APP_FIREBASE_DATABASE +
+        `/coaches/${userId}.json?auth=` +
+        token,
       {
         method: 'PUT',
         body: JSON.stringify(coachData),
